@@ -1,0 +1,709 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>P01 — Week 3</title>
+        
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/3main.css">
+    </head>
+    
+    <body>
+        <nav>
+            <a href="p01-wk3.html">styleguide</a>
+            <a href="p01-wk3-wireframe.html">wireframes</a>
+            <a href="p01-wk3-citations.html">citations</a>
+        </nav>
+        
+        <h1>a styleguide</h1>
+        
+        
+        <section id="basic-elements">
+            <h2>Basic Elements</h2>
+            
+            <div class="container">
+                <div class="desc-container">
+                    <h3>in-text link</h3>
+                    
+                    <!-- collapse buttons -->
+                    <div>
+                        <a class="show" href="#show1" id="show1">show code</a>
+                        <a class="hide" href="#hide1" id="hide1">hide code</a>
+
+                        <code class="code">
+                            a { <br>
+                                color: #eb5c6e; <br>
+                                text-decoration: none; <br>
+                            } <br>
+                            <br>
+                            a:hover, a:active, a:focus { <br>
+                                text-decoration: underline; <br>
+                                color: #8A1422; <br>
+                                transition: color 0.2s; <br>
+                            }
+                        </code>
+                    </div>
+                    
+                    
+                    <h3>call-to-action button</h3>
+                    
+                    <div>
+                        <a class="show" href="#show2" id="show2">show code</a>
+                        <a class="hide" href="#hide2" id="hide2">hide code</a>
+                        <code class="code">button { <br>
+                                color: #f5f4f4; <br>
+                                font-weight: bold; <br>
+                                background-color: #eb5c6e; <br>
+                                padding: 0.5em 1em; <br>
+                                border-radius: 2em; <br>
+                                border: 0; <br>
+                                <br>
+                                margin-top: 2em; <br>
+                            }
+
+                           button:hover, button:active, button:focus { <br>
+                                background-color: #8A1422; <br>
+                                transition: background-color 0.2s; <br>
+                            }
+                        </code>
+                    </div>
+                </div>
+
+                
+                <div class="demo-container">
+                    <h1 class="faded">An absolute masterpiece of text and styling.</h1>
+                    <p>This is a small blurb about why you should totally shop with us and learn about the <a href="#">values we have</a> that make your experience the best it could possibly be.</p>
+
+                    <button>click here to learn more</button>
+                </div>
+                
+            </div>
+
+            <div class="container">
+                <div class="desc-container">
+                    <h3>text input and label</h3>
+                    
+                    <div>
+                        <a class="show" href="#show3" id="show3">show code</a>
+                        <a class="hide" href="#hide3" id="hide3">hide code</a>
+
+                        <code class="code">form { <br>
+                                display: -webkit-flex; <br>
+                                display: -ms-flex; <br>
+                                display:flex; <br>
+                            <br>
+                                flex-wrap: -webkit-wrap; <br>
+                                flex-wrap: -ms-wrap; <br>
+                                flex-wrap: wrap; <br>
+                            <br>
+                                justify-content: space-around; <br>
+                            <br>
+                                margin-bottom: 2em; <br>
+
+                            } <br>
+                            <br>
+                            label { <br>
+                                flex: 1 1 100% <br>
+                            } <br>
+                             <br>
+                            form .half { <br>
+                                flex: 1 1 50%; <br>
+                                margin: 0.5em 0; <br>
+                            } <br>
+                            <br>
+                            form .full { <br>
+                                flex: 1 1 100%; <br>
+                                margin: 0.5em 0; <br>
+                            <br>
+                            }
+                        </code>
+                    </div>
+                    
+                    
+                    <h3>submit and reset buttons</h3>
+                    <div>
+                        <a class="show" href="#show4" id="show4">show code</a>
+                        <a class="hide" href="#hide4" id="hide4">hide code</a>
+
+                        <code class="code">
+                            form .button {<br>
+                                flex: 1 1 100%;<br>
+                                margin: 0.5em 0;<br>
+                                text-align: right;<br>
+                                display: block;<br>
+                            }<br>
+                            <br>
+                            form .button input {<br>
+                                color: #f5f4f4;<br>
+                                padding: 0.5em 1em;<br>
+                                border-radius: 0.15em;<br>
+                                border: 0;<br>
+                            }<br>
+                            <br>
+                            .secondary-button {<br>
+                                background-color: #fd9892;<br>
+                            }<br>
+                            <br>
+                            .primary-button {<br>
+                                background-color: #eb5c6e;<br>
+                            }
+                        </code>
+                    </div>
+                </div>
+                    
+                <div class="demo-container">
+                    <form method="post" action="#">
+                        <label for="review-name">leave a review</label>
+                        <input class="half" title="name" type="text" id="review-name" placeholder="Name">
+                        <input class="half" title="email" type="email" id="review-email" placeholder="email@mail.com">
+                        <textarea class="full" id="review-comment" placeholder="Give us your thoughts!"></textarea>
+                        
+                        <div class="button">
+                            <input class="secondary-button" type="reset" value="reset">
+                            <input class="secondary-button" type="button" value="add image">
+                            <input class="primary-button" type="submit" value="submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="container">
+                <div class="desc-container">
+                    <h3>colour palette</h3>
+                </div>
+                
+                <div class="demo-container" id="palette">
+                    <div id="white">
+                        <p>#FFFFFF<br>(255, 255, 255)</p>
+                    </div>
+
+                    <div id="lightgrey">
+                        <p>#C1C1C1<br>(193, 193, 193)</p>
+                    </div>
+
+                    <div id="darkgrey">
+                        <p>#2D2D2D<br>(45, 45, 45)</p>
+                    </div>
+
+                    <div id="mainpink">
+                        <p>#EB5C6E<br>(235, 92, 110)</p>
+                    </div>
+
+                    <div id="secondarypink">
+                        <p>#FD9892<br>(253, 152, 146)</p>
+                    </div>
+
+                    <div id="offwhite">
+                        <p>#F5F4F4<br>(245, 244, 244)</p>
+                    </div>
+
+                    <div id="midgrey">
+                        <p>#646464<br>(100, 100, 100)</p>
+                    </div>
+
+                    <div id="black">
+                        <p>#000000<br>(0, 0, 0)</p>
+                    </div>
+
+                    <div id="darkmainpink">
+                        <p>#8A1422<br>(138, 20, 34)</p>
+                    </div>
+
+                    <div id="darksecondarypink">
+                        <p>#D95C54<br>(217, 92, 84)</p>
+                    </div>
+                </div>
+            </div>
+        </section> <!-- end of basic elements section -->
+        
+        <section id="text-styling">
+            
+            <h2>Text Styling</h2>
+            
+            <div class="container">
+                <div class="desc-container">
+                    <h3>h1</h3>
+                    <div>
+                        <a class="show" href="#show5" id="show5">show code</a>
+                        <a class="hide" href="#hide5" id="hide5">hide code</a>
+
+                        <code class="code">
+                            h1 {<br>
+                            color: #2d2d2d;<br>
+                            font-size: 2.8em;<br>
+                            }
+                        </code>
+                    </div>
+                </div>
+                
+                <div class="demo-container">
+                    <h1>Summer Sale</h1>
+                </div>
+            </div>
+            
+            <div class="container">
+                <div class="desc-container">
+                <h3>h2</h3>
+                    <div>
+                        <a class="show" href="#show6" id="show6">show code</a>
+                        <a class="hide" href="#hide6" id="hide6">hide code</a>
+
+                        <code class="code">
+                            h2 {<br>
+                            color: #2d2d2d;<br>
+                            font-size: 1.6em;<br>
+                            }
+                        </code>
+                    </div>
+                </div>
+                
+                <div class="demo-container">
+                    <h2>specs</h2>
+                </div>
+            </div>
+            
+            <div class="container">
+                <div class="desc-container">
+                <h3>h3</h3>
+                    <div>
+                        <a class="show" href="#show7" id="show7">show code</a>
+                        <a class="hide" href="#hide7" id="hide7">hide code</a>
+
+                        <code class="code">
+                            h3 {<br>
+                            color: #2d2d2d;<br>
+                            font-size: 1em;<br>
+                            }
+                        </code>
+                    </div>
+                </div>
+                
+                <div class="demo-container">
+                    <h3>measurements</h3>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="desc-container">
+                <h3>p</h3>
+                    <div>
+                        <a class="show" href="#show8" id="show8">show code</a>
+                        <a class="hide" href="#hide8" id="hide8">hide code</a>
+
+                        <code class="code">
+                            p {<br>
+                            color: #000000;<br>
+                            max-width: 30vw;<br>
+                            }
+                        </code>
+                    </div>
+                </div>
+                
+                <div class="demo-container">
+                    <p>This is a small blurb about why you should totally shop with us and learn about the values we have that make your experience the best it could possibly be.</p>
+                </div>
+            </div>
+            
+            <div class="container">
+                <div class="desc-container">
+                <h3>ul</h3>
+                    <div>
+                        <a class="show" href="#show9" id="show9">show code</a>
+                        <a class="hide" href="#hide9" id="hide9">hide code</a>
+
+                        <code class="code">
+                            ul {<br>
+                            list-style-type: circle;<br>
+                            }
+                        </code>
+                    </div>
+                </div>
+                
+                <div class="demo-container">
+                    <ul>
+                        <li>140mm x 10mm</li>
+                        <li>blue-black</li>
+                        <li>gel</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="container">
+                <div class="desc-container">
+                <h3>ol</h3>
+                    <div>
+                        <a class="show" href="#show10" id="show10">show code</a>
+                        <a class="hide" href="#hide10" id="hide10">hide code</a>
+
+                        <code class="code">
+                            ol {<br>
+                            list-style-type: lower-roman;<br>
+                            }
+                        </code>
+                    </div>
+                </div>
+                
+                <div class="demo-container">
+                    <ol>
+                        <li>neutral</li>
+                        <li>orderly</li>
+                        <li>simple</li>
+                    </ol>
+                </div>
+            </div>
+            
+        </section> <!-- end of text-styling section -->
+        
+        <section id="patterns">
+            <h2>Modular Patterns Elements</h2>
+            <div class="container">
+                <div class="desc-container">
+                    <h3>navigation bar</h3>
+                    <div>
+                        <a class="show" href="#show11" id="show11">show code</a>
+                        <a class="hide" href="#hide11" id="hide11">hide code</a>
+
+                        <code class="code">
+                            #logo {<br>
+                                flex: 1 1 1%;<br>
+                                font-size: 1.3em;<br>
+                                font-weight: bold;<br>
+                                text-decoration: none;<br>
+                                color: #eb5c6e;<br>
+                            }<br>
+                            <br>
+                            nav {<br>
+                                flex: 3 3 50%;<br>
+                                text-align: right;<br>
+                            }<br>
+                            <br>
+                            nav a {<br>
+                                color: #2d2d2d;<br>
+                                text-decoration: none;<br>
+                            }<br>
+                            <br>
+                            nav a:hover, nav a:active, nav a:focus {<br>
+                                color: #eb5c6e;<br>
+                                text-decoration: underline;<br>
+                                transition: color 0.2s;<br>
+                            }
+                        </code>
+                    </div>
+                </div>
+                
+                <div class="demo-container" id="demo-nav-container">
+                    <div id="demo-nav">
+                        <a id="logo" href="#">desk</a>
+                        <nav>
+                            <a href="#">sale</a>
+                            <a href="#">pens</a>
+                            <a href="#">notebooks</a>
+                            <a href="#">about</a>
+                            <a href="#">contact</a>
+                            <a href="#">about</a>
+                            <a href="#">cart</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container">
+                <div class="desc-container">
+                    <h3>product grid</h3>
+                    <div>
+                        <a class="show" href="#show12" id="show12">show code</a>
+                        <a class="hide" href="#hide12" id="hide12">hide code</a>
+
+                        <code class="code">
+                            .grid-container {<br>
+                                padding: 2em;<br>
+                                min-width: 20em;<br>
+                            }<br>
+                            <br>
+                            .grid {<br>
+                                display: flex;<br>
+                            }<br>
+                            <br>
+                            @media (min-width: 30em) {<br>
+                                .grid-item {<br>
+                                flex: 1 1 9em;<br>
+                                margin-bottom: 1em;<br>
+                                margin-right: 1em;<br>
+                                max-width: 9em;<br>
+                                min-width: 9em;<br>
+                                }<br>
+                            }<br>
+                            <br>
+                            @media (max-width: 30em) {<br>
+                                .grid-item {<br>
+                                flex: 1 1 7em;<br>
+                                margin-bottom: 1em;<br>
+                                margin-right: 1em;<br>
+                                max-width: 7em;<br>
+                                min-width: 7em;<br>
+                                }<br>
+                            }<br>
+                            <br>
+                            .grid-item img:hover, .grid-item img:active, .grid-item img:focus{<br>
+                                border: solid 1px #FD9892;<br>
+                            }<br>
+                            <br>
+                            .grid-item img {<br>
+                                max-width: 100%;<br>
+                                border-radius: 0.4em;<br>
+                            }<br>
+                            <br>
+                            .grid-item h3 {<br>
+                                font-size: 0.8em;<br>
+                                color: #2d2d2d;<br>
+                            }<br>
+                        </code>
+                    </div>
+                    
+                </div>
+                
+                <div class="demo-container grid-container">
+                    <h2>pens</h2>
+                    <div class="grid">
+                        <div class="grid-item">
+                            <a href="#"><img src="img_2/ink/038_blue.jpg" alt="a blue pen and its ink colour"></a>
+                            <h3><a href="#">capped gel pen <br> blue / 0.38mm</a></h3>
+                            <h3 class="price">$1.50</h3>
+                        </div>
+                        
+                        <div class="grid-item">
+                            <img src="img_2/ink/038_black.jpg" alt="a black pen and its ink colour">
+                            <h3><a href="#">capped gel pen <br> black / 0.38mm</a></h3>
+                            <h3>$1.50</h3>
+                        </div>
+                        
+                        <div class="grid-item">
+                            <img src="img_2/ink/038_orange.jpg" alt="an orange pen and its ink colour">
+                            <h3><a href="#">capped gel pen <br> orange / 0.38mm</a></h3>
+                            <h3 class="price">$1.50</h3>
+                        </div>
+                        
+                        <div class="grid-item">
+                            <img src="img_2/ink/038_green.jpg" alt="a green pen and its ink colour">
+                            <h3><a href="#">capped gel pen <br> green / 0.38mm</a></h3>
+                            <h3 class="price">$1.50</h3>
+                        </div>
+                        
+                        <div class="grid-item">
+                            <img src="img_2/ink/038_red.jpg" alt="a red pen and its ink colour">
+                            <h3><a href="#">capped gel pen <br> red / 0.38mm</a></h3>
+                            <h3 class="price">$1.50</h3>
+                        </div>
+                        <div class="grid-item">
+                            <img src="img_2/ink/038_green.jpg" alt="a green pen and its ink colour">
+                            <h3><a href="#">capped gel pen <br> green / 0.38mm</a></h3>
+                            <h3 class="price">$1.50</h3>
+                        </div>
+                        
+                        <div class="grid-item">
+                            <img src="img_2/ink/038_pink.jpg" alt="a pink pen and its ink colour">
+                            <h3><a href="#">capped gel pen <br> pink / 0.38mm</a></h3>
+                            <h3 class="price">$1.50</h3>
+                        </div>
+                        
+                        <div class="grid-item">
+                            <img src="img_2/ink/038_blueblack.jpg" alt="a blue-black pen and its ink colour">
+                            <h3><a href="#">capped gel pen <br> blue-black / 0.38mm</a></h3>
+                            <h3 class="price">$1.50</h3>
+                        </div>
+                        
+                        <div class="grid-item">
+                            <img src="img_2/ink/038_lime.jpg" alt="a lime pen and its ink colour">
+                            <h3><a href="#">capped gel pen <br> lime / 0.38mm</a></h3>
+                            <h3 class="price">$1.50</h3>
+                        </div>
+                        
+                        <div class="grid-item">
+                            <img src="img_2/ink/038_skyblue.jpg" alt="a sky blue pen and its ink colour">
+                            <h3><a href="#">capped gel pen <br> sky blue / 0.38mm</a></h3>
+                            <h3 class="price">$1.50</h3>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+            <div class="container">
+                <div class="desc-container">
+                    <h3>website grid structure</h3>
+                    <p>The grid system will sit on a grid of fifths, using any combination of 1/5, 2/5, 3/5, and 5/5 container sizings to create a full row. Sizings of 4/5 are never used.</p>
+                </div>
+                
+                <div class="demo-container">
+                    
+                    <div class="grid">
+                        <div class="placeholder two-fifths tall">h1</div>
+                        <div class="placeholder three-fifths tall">img</div>
+                    </div>
+                    
+                    <div class="grid">
+                        <div class="placeholder one-fifth short">item</div>
+                        <div class="placeholder one-fifth short">item</div>
+                        <div class="placeholder one-fifth short">item</div>
+                        <div class="placeholder one-fifth short">item</div>
+                        <div class="placeholder one-fifth short">item</div>
+                    </div>
+                    
+                    <div class="grid">
+                        <div class="placeholder one-fifth short">item</div>
+                        <div class="placeholder one-fifth short">item</div>
+                        <div class="placeholder one-fifth short">item</div>
+                        <div class="placeholder one-fifth short">item</div>
+                        <div class="placeholder one-fifth short">item</div>
+                    </div>
+                    
+                    <div class="grid">
+                        <div class="placeholder one-fifth short">p</div>
+                        <div class="placeholder one-fifth short">p</div>
+                        <div class="placeholder three-fifths short">img</div>
+                    </div>
+                    
+                    <div class="grid">
+                        <div class="placeholder three-fifths med">img</div>
+                        <div class="placeholder two-fifths med">h2 p</div>
+                    </div>
+                    
+                    <div class="grid">
+                    <div class="    placeholder five-fifths med"></div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="container">
+                    <div class="desc-container">
+                        <h3 id="caroseul-header">caroseuls</h3>
+                        <div>
+                            <a class="show" href="#show13" id="show13">show code</a>
+                            <a class="hide" href="#hide13" id="hide13">hide code</a>
+
+                            <code class="code">
+                                .scrolling-wrapper {<br>
+                                    display: -webkit-flex;<br>
+                                    display: -ms-flex;<br>
+                                    display: flex;<br>
+                                <br>
+                                    flex-wrap: -webkit-wrap;<br>
+                                    flex-wrap: -ms-wrap;<br>
+                                    flex-wrap: nowrap;<br>
+                                    <br>
+                                    overflow-x: scroll;<br>
+                                    -ms-overflow-style: none;<br>
+                                    <br>
+                                    background-color: #f5f4f4;<br>
+                                    padding: 2em;<br>
+                                }<br>
+                                <br>
+                                .scroll-wrapper::-webkit-scrollbar {<br>
+                                    display: none;<br>
+                                }<br>
+                                <br>
+                                .card {<br>
+                                    flex: 1 1 12em;<br>
+                                    margin-right: 1em;<br>
+                                }<br>
+
+                                .card h3 {<br>
+                                    font-size: 0.8em;<br>
+                                    color: #2d2d2d;<br>
+                                    font-weight: normal;<br>
+                                }<br>
+                                <br>
+                                .card a {<br>
+                                    color: #eb5c6e;<br>
+                                    text-decoration: none;<br>
+                                }<br>
+                                <br>
+                                .card a:hover, .card a:active, .card a:focus {<br>
+                                    color: rgb(235, 92, 110);<br>
+                                    text-decoration: underline;<br>
+                                    transition: color 0.2s;<br>
+                                }<br>
+                                <br>
+                                .card img {<br>
+                                    max-width: 12em;<br>
+                                    border-radius: 0.4em;<br>
+                                }
+                            </code>
+                        </div>
+                    </div>
+                
+                    <div class="scrolling-wrapper">
+                        <div class="card">
+                            <img src="img_2/ink/038_blue.jpg" alt="a blue pen and its ink colour">
+                            <h3><a href="#">capped gel pen <br> blue / 0.38mm</a></h3>
+                            <h3 class="price">$1.50</h3>
+                        </div>
+                        
+                        <div class="card">
+                            <img src="img_2/ink/038_black.jpg" alt="a black pen and its ink colour">
+                            <h3><a href="#">capped gel pen <br> black / 0.38mm</a></h3>
+                            <h3>$1.50</h3>
+                        </div>
+                        
+                        <div class="card">
+                            <img src="img_2/ink/038_orange.jpg" alt="an orange pen and its ink colour">
+                            <h3><a href="#">capped gel pen <br> orange / 0.38mm</a></h3>
+                            <h3 class="price">$1.50</h3>
+                        </div>
+                        
+                        <div class="card">
+                            <img src="img_2/ink/038_green.jpg" alt="a green pen and its ink colour">
+                            <h3><a href="#">capped gel pen <br> green / 0.38mm</a></h3>
+                            <h3 class="price">$1.50</h3>
+                        </div>
+                        
+                        <div class="card">
+                            <img src="img_2/ink/038_red.jpg" alt="a red pen and its ink colour">
+                            <h3><a href="#">capped gel pen <br> red / 0.38mm</a></h3>
+                            <h3 class="price">$1.50</h3>
+                        </div>
+                        <div class="card">
+                            <img src="img_2/ink/038_green.jpg" alt="a green pen and its ink colour">
+                            <h3><a href="#">capped gel pen <br> green / 0.38mm</a></h3>
+                            <h3 class="price">$1.50</h3>
+                        </div>
+                        
+                        <div class="card">
+                            <img src="img_2/ink/038_pink.jpg" alt="a pink pen and its ink colour">
+                            <h3><a href="#">capped gel pen <br> pink / 0.38mm</a></h3>
+                            <h3 class="price">$1.50</h3>
+                        </div>
+                        
+                        <div class="card">
+                            <img src="img_2/ink/038_blueblack.jpg" alt="a blue-black pen and its ink colour">
+                            <h3><a href="#">capped gel pen <br> blue-black / 0.38mm</a></h3>
+                            <h3 class="price">$1.50</h3>
+                        </div>
+                        
+                        <div class="card">
+                            <img src="img_2/ink/038_lime.jpg" alt="a lime pen and its ink colour">
+                            <h3><a href="#">capped gel pen <br> lime / 0.38mm</a></h3>
+                            <h3 class="price">$1.50</h3>
+                        </div>
+                        
+                        <div class="card">
+                            <img src="img_2/ink/038_skyblue.jpg" alt="a sky blue pen and its ink colour">
+                            <h3><a href="#">capped gel pen <br> sky blue / 0.38mm</a></h3>
+                            <h3 class="price">$1.50</h3>
+                        </div>
+                    </div>
+                
+                    
+                
+                </div>
+                
+        
+        </section> <!-- end of patterns section -->
+        
+        
+    </body>

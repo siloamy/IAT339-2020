@@ -1,0 +1,432 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #1d1d1d;
+    
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    padding: 3em 10vw;
+
+}
+
+nav {
+    text-align: right
+}
+
+nav a {
+    text-decoration: none;
+    color: #f5f4f4;
+    margin-left: 2em;
+    padding: 0;
+/*    border: solid 1px red;*/
+}
+
+nav a:hover, nav a:active, nav a:focus {
+    color: rgb(235, 92, 110);
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+
+img {
+    max-width: 100%;
+}
+
+.faded {
+    opacity: 0.1;
+}
+
+h1, h2, h3, p {
+    margin: 0.3em;
+    color: #f5f4f4;
+    padding-bottom: 1em;
+}
+
+h1 {
+    text-align: center;
+    margin: 6em 0;
+}
+
+/* based off of code by user dmarvs
+    a css hack for collapsibles  */
+.code, .hide, .show:target {display: none;}
+.show:target + .hide, .show:target ~ .code{display: block;}
+
+.hide, .show {
+    border-radius: 0.2em;
+    padding: 0.25em 0.5em;
+    background-color: #f5f4f4;
+    color: #f5f4f4;
+    text-align: center;
+    text-decoration: none;
+}
+
+.show {
+    display: block;
+    margin-bottom: 2em;
+}
+
+.hide:hover, .show:hover {
+    background-color: #D95C54;
+}
+
+code {
+    display: block;
+    padding: 1em;
+    background-color: #2d2d2d;
+    color: #FD9892;
+    font-size: 0.8em;
+    
+    margin-bottom: 2em;
+}
+
+.container, form, #palette, #demo-nav, .grid{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display:flex;
+    
+    flex-wrap: -webkit-wrap;
+    flex-wrap: -ms-wrap;
+    flex-wrap: wrap;
+    
+    justify-content: space-around;
+    
+    margin-bottom: 2em;
+}
+
+@media (max-width: 45em) {
+
+    .desc-container{
+        flex: 1 1 100%;
+        padding-right: 5vw;
+    /*    border: 1px solid red;*/
+    }
+
+    .demo-container, .scrolling-wrapper {
+        flex: 1 1 100%;
+        background-color: #f5f4f4;
+        padding: 3em 10vw;
+    }
+
+}
+
+@media (min-width: 45em) {
+
+    .desc-container {
+        flex: 2 1 20vw;
+        padding-right: 5vw;
+    /*    border: 1px solid red;*/
+    }
+
+    .demo-container, .scrolling-wrapper {
+        flex: 5 2 50vw;
+        background-color: #f5f4f4;
+        padding: 3em 10vw;
+    }
+
+}
+    
+.demo-container a, .desc-container a {
+    color: #eb5c6e;
+    text-decoration: none;
+}
+
+.demo-container a:hover, .desc-container a:active, .desc-container a:focus, .desc-container a:hover, .desc-container a:active, .desc-container a:focus {
+    text-decoration: underline;
+    color: #8A1422;
+    transition: color 0.2s;
+}
+
+.demo-container button {
+    color: #f5f4f4;
+    font-weight: bold;
+    background-color: #eb5c6e;
+    padding: 0.5em 1em;
+    border-radius: 2em;
+    border: 0;
+    
+    margin-top: 2em;
+}
+
+.demo-container button:hover, .demo-container button:active, .demo-container button:focus {
+    background-color: #8A1422;
+    transition: background-color 0.2s;
+}
+
+label {
+    flex: 1 1 100%
+}
+
+form .half {
+    flex: 1 1 50%;
+    margin: 0.5em 0;
+}
+
+form .full {
+    flex: 1 1 100%;
+    margin: 0.5em 0;
+        
+}
+
+form .button {
+    flex: 1 1 100%;
+    margin: 0.5em 0;
+    text-align: right;
+    display: block;
+}
+
+form .button input {
+    color: #f5f4f4;
+    padding: 0.5em 1em;
+    border-radius: 0.15em;
+    border: 0;
+}
+
+.secondary-button {
+    background-color: #fd9892;
+}
+
+.primary-button {
+    background-color: #eb5c6e;
+}
+
+
+#palette {
+    padding: 0;
+    background-color: transparent;
+}
+
+#palette div {
+    flex: 1 1 10vw;
+    text-align: center;
+    padding: 3.5em 0;
+}
+
+#white { background-color: #FFFFFF; }
+#lightgrey { background-color: #c1c1c1;}
+#darkgrey { background-color: #2d2d2d;}
+#mainpink { background-color: #eb5c6e;}
+#secondarypink { background-color: #fd9892;}
+#offwhite { background-color: #f5f4f4;}
+#midgrey { background-color: #646464;}
+#black { background-color: #000000;}
+#darkmainpink { background-color: #8A1422;}
+#darksecondarypink { background-color: #d95c54;}
+#white p, #offwhite p {color: #eb5c6e;}
+#lightgrey p, #midgrey p {color: #f5f4f4;}
+#darkgrey p, #black p {color: #fd9892;}
+#mainpink p, #darkmainpink p {color: #ffffff;}
+#secondarypink p, #darksecondarypink p {color: #2d2d2d;}
+
+
+.demo-container p, .demo-container h1, .demo-container h2, .demo-container h3 {
+    text-align: inherit;
+    color: #2d2d2d;
+    margin: 0.3em 0;
+    
+    max-width: 30vw;
+}
+
+.demo-container h1 {
+    font-size: 2.8em;
+}
+
+.demo-container h2 {
+    font-size: 1.6em;
+}
+
+.demo-container h3 {
+    font-size: 1em;
+    font-weight: normal;
+    color: #eb5c6e;
+}
+
+.demo-container ul {
+    list-style-type: circle;
+}
+
+.demo-container ol {
+    list-style: lower-roman;
+}
+
+#demo-nav-container {
+    padding: 2em;
+}
+
+@media (max-width: 78.2em) {
+    #logo, #demo-nav nav, #demo-nav nav a {
+        flex: 1 1 100%;
+        margin: 0;
+        text-align: center;
+    }
+    
+    #logo, #demo-nav nav a {
+        padding: 1em 0em;
+        border-bottom: solid 1px;
+    }
+    
+    #demo-nav nav a:hover, #demo-nav nav a:active, #demo-nav nav a:focus {
+        background-color: #ffffff;
+        transition: background-color 0.2s;
+    }
+    
+    #demo-nav nav {
+        display: -webkit-flex;
+        display: -ms-flex;
+        display:flex;
+
+        flex-wrap: -webkit-wrap;
+        flex-wrap: -ms-wrap;
+        flex-wrap: wrap;
+
+        justify-content: space-around;
+        
+    }
+}
+
+@media (min-width: 78.2em) {
+    #logo {
+        flex: 1 1 1%;
+    }
+    
+    #demo-nav nav {
+        flex: 3 3 50%;
+        text-align: right;
+    }
+}
+
+#logo {
+    font-size: 1.3em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #eb5c6e;
+}
+
+#demo-nav nav a {
+    color: #2d2d2d;
+    text-decoration: none;
+    
+}
+
+#demo-nav nav a:hover, #demo-nav nav a:active, #demo-nav nav a:focus {
+    color: #eb5c6e;
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+
+.grid-container {
+    padding: 2em;
+    min-width: 20em;
+}
+
+.grid {
+    display: flex;
+}
+
+@media (min-width: 30em) {
+    .grid-item {
+    flex: 1 1 9em;
+    margin-bottom: 1em;
+    margin-right: 1em;
+    max-width: 9em;
+    min-width: 9em;
+    }
+}
+
+@media (max-width: 30em) {
+    .grid-item {
+    flex: 1 1 7em;
+    margin-bottom: 1em;
+    margin-right: 1em;
+    max-width: 7em;
+    min-width: 7em;
+    }
+}
+
+.grid-item img:hover, .grid-item img:active, .grid-item img:focus{
+    border: solid 1px #FD9892;
+}
+
+.grid-item img {
+    max-width: 100%;
+    border-radius: 0.4em;
+}
+
+.grid-item h3 {
+    font-size: 0.8em;
+    color: #2d2d2d;
+}
+
+.placeholder {
+    background-color: #c1c1c1;
+    border: solid 0.4em #f5f4f4;
+    margin-bottom: 1em;
+}
+
+.tall {height: 14em;}
+.med {height: 12em;}
+.short {height: 7em;}
+
+@media (max-width: 45em) {
+    .one-fifth,.two-fifths,.three-fifths,.five-fifths { flex: 1 1 50%; }
+}
+
+@media (min-width: 45em) {
+
+.one-fifth {flex: 1 1 20%;}
+.two-fifths {flex: 1 1 40%;}
+.three-fifths {flex: 1 1 60%;}
+.five-fifths {flex: 1 1 100%;}
+}
+
+#caroseul-header {
+    flex: auto;
+    text-align: left;
+}
+
+/* code based on code by Colin Lord https://codeburst.io/how-to-create-horizontal-scrolling-containers-d8069651e9c6 */
+
+.scrolling-wrapper {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+
+    flex-wrap: -webkit-wrap;
+    flex-wrap: -ms-wrap;
+    flex-wrap: nowrap;
+    
+    overflow-x: scroll;
+    
+    background-color: #f5f4f4;
+    padding: 2em;
+}
+
+.card {
+    flex: 1 1 12em;
+    margin-right: 1em;
+}
+
+.card h3 {
+    font-size: 0.8em;
+    color: #2d2d2d;
+    font-weight: normal;
+}
+
+.card a {
+    color: #eb5c6e;
+    text-decoration: none;
+}
+
+.card a:hover, .card a:active, .card a:focus {
+    color: rgb(235, 92, 110);
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+
+.card img {
+    max-width: 12em;
+    border-radius: 0.4em;
+}
