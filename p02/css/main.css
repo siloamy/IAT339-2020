@@ -11,6 +11,11 @@ body {
     padding: 3em 10vw;
 }
 
+header {
+    width: 100%;
+    height 10em;
+}
+
  #nav-bar {
     display: -webkit-flex;
     display: -ms-flex;
@@ -21,6 +26,13 @@ body {
     flex-wrap: wrap;
 
     justify-content: space-around;
+}
+
+.banner.img1 {
+    background-image: url();
+}
+.banner {
+    position
 }
 
 @media (max-width: 78.2em) {
