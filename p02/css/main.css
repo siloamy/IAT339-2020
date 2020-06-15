@@ -62,6 +62,8 @@ header {
     /*    border: solid 1px red;*/
 }
 
+/* header banner code inspired by https://ryohin-keikaku.jp/csr/ */
+
 .banner.about-banner {
     background-image: url(../img/ink/038_green.jpg);
 }
