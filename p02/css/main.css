@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html {
@@ -8,12 +10,33 @@ html {
 
 body {
     font-family: Helvetica, sans-serif;
-    padding: 3em 10vw;
+/*    padding: 1em 10vw 3em 10vw;*/
 }
 
-header {
-    width: 100%;
-    height 10em;
+p, h1, h2, h3 {
+    color: #2d2d2d;
+}
+
+h1 {
+    font-size: 2.8em;
+}
+
+h2 {
+    font-size: 1.6em;
+}
+
+h3 {
+    font-size: 1em;
+    font-weight: normal;
+    color: #eb5c6e;
+}
+
+ul {
+    list-style-type: circle;
+}
+
+ol {
+    list-style: lower-roman;
 }
 
  #nav-bar {
@@ -26,13 +49,44 @@ header {
     flex-wrap: wrap;
 
     justify-content: space-around;
+    padding: 1.5em 10vw 1.5em 10vw;
+
 }
 
-.banner.img1 {
-    background-image: url();
+header {
+    width: 100%;
+    height: 13em;
+    padding: 4em 0;
+    position: relative;
+    
+    /*    border: solid 1px red;*/
 }
+
+.banner.about-banner {
+    background-image: url(../img/ink/038_green.jpg);
+}
+
+.banner.collection-banner {
+    background-image: url(../img/ink/05_orange.jpg);
+}
+
 .banner {
-    position
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+header h1 {
+    padding: 0 10vw;
+    margin: 0;
 }
 
 @media (max-width: 78.2em) {
@@ -43,13 +97,25 @@ header {
     }
     
     #logo, nav a {
-        padding: 1em 0em;
+        padding: 0.6em 0;
         border-bottom: solid 1px;
     }
     
     nav a:hover, nav a:active, nav a:focus {
         background-color: #ffffff;
         transition: background-color 0.2s;
+    }
+    
+    nav {
+        display: -webkit-flex;
+        display: -ms-flex;
+        display:flex;
+
+        flex-wrap: -webkit-wrap;
+        flex-wrap: -ms-wrap;
+        flex-wrap: wrap;
+
+        justify-content: space-around;
     }
 }
 
@@ -62,10 +128,15 @@ header {
         flex: 3 3 50%;
         text-align: right;
     }
+    
+    nav a {
+        margin: 0 0 0 2em;
+        padding: 0;
+    }
 }
 
 #logo {
-    font-size: 1.3em;
+    font-size: 1.5em;
     font-weight: bold;
     text-decoration: none;
     color: #eb5c6e;
@@ -74,8 +145,6 @@ header {
 nav a {
     color: #2d2d2d;
     text-decoration: none;
-    margin-left: 2em;
-    padding: 0;
 }
 
 nav a:hover, nav a:active, nav a:focus {
