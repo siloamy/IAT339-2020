@@ -184,6 +184,7 @@ nav a:hover, nav a:active, nav a:focus {
 .product-description {
     flex: 2 2 20em;
     padding-right: 5em;
+    padding-bottom: 5em;
 }
 
 .product-description h1 {
@@ -191,7 +192,7 @@ nav a:hover, nav a:active, nav a:focus {
 }
 
 .product-image {
-    flex: 3 3 30em;
+    flex: 3 3 25em;
     text-align: right;
 }
 
@@ -222,6 +223,8 @@ button:hover, button:active, button:focus {
 .specs-container {
     flex: 3 3 30em;
     display: block;
+    
+    padding-bottom: 2em;
 }
 
 .specs-container h2 {
@@ -248,9 +251,38 @@ button:hover, button:active, button:focus {
 
 .reviews-container {
     flex: 2 2 20em;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    
+    flex-wrap: -webkit-wrap;
+    flex-wrap: -ms-wrap;
+    flex-wrap: wrap;
+    
+    justify-content: space-around;
+    
+    padding-bottom: 2em;
+}
+
+.reviews-container h2 {
+    flex: 1 1 50%;
+}
+
+.reviews-container a {
+    flex: 1 1 50%;
+    text-align: right;
+    
+    color: #EB5C6E;
+    text-decoration: none;
+}
+
+.reviews-container a:hover, .reviews-container a:active, .reviews-container a:focus {
+    color: #8A1422;
+    transition: color 0.2s;
 }
 
 .review {
+    flex: 1 1 100%;
     margin: 2em 0em;
 }
 
