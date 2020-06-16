@@ -49,20 +49,6 @@ ol {
     list-style: lower-roman;
 }
 
- #nav-bar {
-    display: -webkit-flex;
-    display: -ms-flex;
-    display:flex;
-
-    flex-wrap: -webkit-wrap;
-    flex-wrap: -ms-wrap;
-    flex-wrap: wrap;
-
-    justify-content: space-around;
-    padding: 1.5em 10vw 1.5em 10vw;
-
-}
-
 header {
     width: 100%;
     height: 13em;
@@ -99,6 +85,22 @@ header {
 header h1, header h2 {
     padding: 0 10vw;
     margin: 0;
+}
+
+/* beginning of nav bar section */
+
+#nav-bar {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display:flex;
+
+    flex-wrap: -webkit-wrap;
+    flex-wrap: -ms-wrap;
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+    padding: 1.5em 10vw 1.5em 10vw;
+
 }
 
 @media (max-width: 48.1em) {
@@ -171,6 +173,8 @@ nav a:hover, nav a:active, nav a:focus {
     text-decoration: underline;
     transition: color 0.2s;
 }
+
+/* end of nav bar section */
 
 .container {
     display: -webkit-flex;
