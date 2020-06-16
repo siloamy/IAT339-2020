@@ -83,3 +83,125 @@ nav a:hover, nav a:active, nav a:focus {
 
     justify-content: space-around;
 }
+
+.button {
+color: #f5f4f4;
+font-weight: bold;
+background-color: #eb5c6e;
+height:150px;
+width: 150px;
+border-radius: 50%;
+
+margin-top: 2em;
+margin-bottom: 2em;
+} button:hover, button:active, button:focus {
+background-color: #8A1422;
+transition: background-color 0.2s;
+}
+
+button {
+color: #f5f4f4;
+font-weight: bold;
+background-color: #eb5c6e;
+padding: 0.5em 1em;
+border-radius: 2em;
+border: 0;
+
+margin-top: 2em;
+} button:hover, button:active, button:focus {
+background-color: #8A1422;
+transition: background-color 0.2s;
+}
+
+
+h1 {
+color: #2d2d2d;
+font-size: 2.8em;
+max-width: 35rem;
+}
+
+.scrolling-wrapper {
+display: -webkit-flex;
+display: -ms-flex;
+display: flex;
+
+flex-wrap: -webkit-wrap;
+flex-wrap: -ms-wrap;
+flex-wrap: nowrap;
+
+overflow-x: scroll;
+-ms-overflow-style: none;
+
+background-color: #f5f4f4;
+padding: 2em;
+}
+
+.scroll-wrapper::-webkit-scrollbar {
+display: none;
+}
+
+.card {
+flex: 1 1 12em;
+margin-right: 1em;
+}
+.card h3 {
+font-size: 0.8em;
+color: #2d2d2d;
+font-weight: normal;
+}
+
+.card a {
+color: #eb5c6e;
+text-decoration: none;
+}
+
+.card a:hover, .card a:active, .card a:focus {
+color: rgb(235, 92, 110);
+text-decoration: underline;
+transition: color 0.2s;
+}
+
+.card img {
+max-width: 12em;
+border-radius: 0.4em;
+}
+
+[class^='grid-col-'] {
+    float: left;
+    padding: 0; 
+    
+}
+
+.grid-col-1of2 {
+    width: 100%;
+}
+
+.grid-row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+
+
+@media (min-width: 48.75em) {
+
+    .grid-col-1of2 {
+        width: 50%;
+    }
+
+    .grid-col-1of2:last-of-type {
+        padding-left: 1rem;
+    }
+
+}
+
+
+
+
+
+img {
+    height: auto; 
+    max-width: 100%;
+}
