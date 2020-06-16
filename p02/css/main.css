@@ -449,3 +449,97 @@ form textarea, form input {
     font-weight: bold;
     margin: 0 2em;
 }
+
+.checkout {
+    padding: 0 9vw;
+}
+
+.checkout h1 {
+    flex: 1 1 100%;
+    padding: 0 1vw;
+}
+
+
+@media (min-width: 48.1em) {
+    .checkout .grid {
+        flex: 3 3 60%;
+    }
+
+    .receipt {
+        padding: 0 2.5em;
+        flex: 3 3 40%;
+    }
+}
+
+@media (max-width: 48.1em) {
+    .checkout .grid {
+        flex: 1 1 100%;
+    }
+
+    .receipt {
+        padding: 0 1vw;
+        flex: 1 1 100%;
+        
+        padding-top: 1.5em;
+        border-top: dashed 1px #c1c1c1;
+    }
+}
+
+.receipt {
+    display: block;
+}
+
+.receipt h2 {
+    flex: 1 1 100%;
+    margin-bottom: 1em;
+}
+
+.receipt div {
+    flex: 1 1 100%;
+    margin-bottom: 2em;
+}
+
+.receipt p {
+    padding: 1em 0;
+}
+
+.total {
+    flex: 1 1 100%;
+    
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    
+    flex-wrap: -webkit-wrap;
+    flex-wrap: -ms-wrap;
+    flex-wrap: wrap;
+    
+    justify-content: space-around;
+    
+    padding-top: 1.5em;
+    border-top: dashed 1px #c1c1c1;
+}
+
+@media (max-width: 59.1em) {
+    .total {
+        display: block;
+        
+    }
+    
+    .total div {
+        text-align: left;
+    }
+}
+
+@media (min-width: 59.1em) {
+    .total div {
+        flex: 1 1 50%;
+        text-align: right;
+    }
+
+}
+
+.total h2 {
+    flex: 1 1 50%;
+}
+
