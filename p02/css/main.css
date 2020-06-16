@@ -13,6 +13,11 @@ body {
 /*    padding: 1em 10vw 3em 10vw;*/
 }
 
+a {
+    color: #eb5c6e;
+    text-decoration: none;
+}
+
 p, h1, h2, h3 {
     color: #2d2d2d;
 }
@@ -91,7 +96,7 @@ header {
     margin: 0;
 }
 
-header h1 {
+header h1, header h2 {
     padding: 0 10vw;
     margin: 0;
 }
@@ -356,4 +361,91 @@ form textarea, form input {
 .primary-button:hover, .primary-button:active, .primary-button:focus {
     background-color: #8A1422;
     transition: background-color 0.2s;
+}
+
+.sort-and-filter {
+    flex: 1 1 50%;
+    padding-top: 2em;
+    display: flex;
+}
+
+.sort-and-filter a, .sort-and-filter p {
+    padding: 0.2em 1em;
+}
+
+.sort-and-filter a {
+    color: #FD9892;
+}
+
+.sort-and-filter a:active, .sort-and-filter a:focus, .sort-and-filter a:hover {
+    color: #EB5C6E;
+    
+}
+
+.grid {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    
+    flex-wrap: -webkit-wrap;
+    flex-wrap: -ms-wrap;
+    flex-wrap: wrap;
+    
+    justify-content: space-around;
+    
+    margin-bottom: 2em;
+}
+
+.grid-container {
+    padding: 2em 9vw;
+    min-width: 20em;
+}
+
+.grid {
+    display: flex;
+}
+
+@media (min-width: 30em) {
+    .grid-item {
+        flex: 1 1 9em;
+        margin-bottom: 1em;
+        margin-left: 1vw;
+        margin-right: 1em;
+        max-width: 9em;
+/*        min-width: 9em;*/
+    }
+}
+
+@media (max-width: 30em) {
+    .grid-item {
+        flex: 1 1 7em;
+        margin-bottom: 1em;
+        margin-left: 1vw;
+        margin-right: 1em;
+        max-width: 7em;
+/*        min-width: 9em;*/
+    }
+}
+
+.grid-item img:hover, .grid-item img:active, .grid-item img:focus{
+    border: solid 1px #FD9892;
+}
+
+.grid-item img {
+    max-width: 100%;
+    border-radius: 0.4em;
+}
+
+.grid-item h3 {
+    font-size: 0.8em;
+    color: #2d2d2d;
+}
+
+.page-number {
+    display: block;
+}
+
+.prev-button, .next-button {
+    font-weight: bold;
+    margin: 0 2em;
 }
