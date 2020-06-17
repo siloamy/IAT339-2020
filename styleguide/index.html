@@ -697,10 +697,66 @@
                             <h3><a href="#">capped gel pen <br> sky blue / 0.38mm</a></h3>
                             <h3 class="price">$1.50</h3>
                         </div>
+                    </div>    
+            </div>
+            
+            <div class="container header-container">
+                <div class="desc-container">
+                    <h3>header banners</h3>
+                    <div>
+                        <a class="show" href="#show15" id="show15">show code</a>
+                        <a class="hide" href="#hide15" id="hide15">hide code</a>
+
+                        <code class="code">
+                            header {<br>
+                                width: 100%;<br>
+                                height: 13em;<br>
+                                padding: 4em 0;<br>
+                                position: relative;<br>
+                            }<br>
+                            <br>
+                            /* header banner code inspired by https://ryohin-keikaku.jp/csr/ */<br>
+                            <br>
+                            .banner.about-banner {<br>
+                                background-image: url(../img/ink/038_green.jpg);<br>
+                            }<br>
+                            <br>
+                            .banner.collection-banner {<br>
+                                background-image: url(../img/ink/05_orange.jpg);<br>
+                            }<br>
+                            <br>
+                            .banner {<br>
+                                display: block;<br>
+                                position: absolute;<br>
+                                top: 0;<br><br>
+                                bottom: 0;<br>
+                                left: 0;<br>
+                                right: 0;<br>
+                                z-index: -1;<br>
+                                background-size: cover;<br>
+                                background-position: center center;<br>
+                                background-repeat: no-repeat;<br>
+                                margin: 0;<br>
+                            }<br>
+                            <br>
+                            header h1, header h2 {<br>
+                                padding: 0 10vw;<br>
+                                margin: 0;<br>
+                            }<br>
+                        </code>
                     </div>
+                </div>
                 
-                    
-                
+                <div class="demo-container header-demo">
+                    <header>
+          
+                          <h1>Collection</h1>
+                          <h2>a secondary description of sorts</h2>
+                          <figure class="banner collection-banner"></figure>
+
+                    </header>
+
+                </div>
             </div>
             
             <div class="container footer-container">
