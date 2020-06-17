@@ -489,6 +489,7 @@ footer {
 header h1, header h2 {
     padding: 0 10vw;
     margin: 0;
+    min-width: 100%;
 }
 
 footer .footer-desc, footer .contact {
