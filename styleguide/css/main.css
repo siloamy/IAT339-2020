@@ -438,7 +438,7 @@ form .button input {
 
 header, footer {
     width: 100%;
-    height: auto;
+    height: 14em;
     padding: 4em 0;
     position: relative;
 }
