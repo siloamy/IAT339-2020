@@ -85,7 +85,7 @@ code {
 .container, form, #palette, #demo-nav, .grid{
     display: -webkit-flex;
     display: -ms-flex;
-    display:flex;
+    display: flex;
     
     flex-wrap: -webkit-wrap;
     flex-wrap: -ms-wrap;

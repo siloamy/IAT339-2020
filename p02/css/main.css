@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html {
@@ -8,10 +10,86 @@ html {
 
 body {
     font-family: Helvetica, sans-serif;
-    padding: 3em 10vw;
+/*    padding: 1em 10vw 3em 10vw;*/
 }
 
- #nav-bar {
+a {
+    color: #eb5c6e;
+    text-decoration: none;
+}
+
+p, h1, h2, h3 {
+    color: #2d2d2d;
+}
+
+p {
+    max-width: 30em;
+    line-height: 150%;
+}
+
+h1 {
+    font-size: 2.8em;
+}
+
+h2 {
+    font-size: 1.6em;
+}
+
+h3 {
+    font-size: 1em;
+    font-weight: normal;
+    color: #eb5c6e;
+}
+
+ul {
+    list-style-type: circle;
+}
+
+ol {
+    list-style: lower-roman;
+}
+
+header {
+    width: 100%;
+    height: 13em;
+    padding: 4em 0;
+    position: relative;
+    
+    /*    border: solid 1px red;*/
+}
+
+/* header banner code inspired by https://ryohin-keikaku.jp/csr/ */
+
+.banner.about-banner {
+    background-image: url(../img/ink/038_green.jpg);
+}
+
+.banner.collection-banner {
+    background-image: url(../img/ink/05_orange.jpg);
+}
+
+.banner {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+header h1, header h2 {
+    padding: 0 10vw;
+    margin: 0;
+}
+
+/* beginning of nav bar section */
+
+#nav-bar {
     display: -webkit-flex;
     display: -ms-flex;
     display:flex;
@@ -21,9 +99,11 @@ body {
     flex-wrap: wrap;
 
     justify-content: space-around;
+    padding: 1.5em 10vw 1.5em 10vw;
+
 }
 
-@media (max-width: 78.2em) {
+@media (max-width: 48.1em) {
     #logo, nav, nav a {
         flex: 1 1 100%;
         margin: 0;
@@ -31,7 +111,7 @@ body {
     }
     
     #logo, nav a {
-        padding: 1em 0em;
+        padding: 0.6em 0;
         border-bottom: solid 1px;
     }
     
@@ -39,9 +119,21 @@ body {
         background-color: #ffffff;
         transition: background-color 0.2s;
     }
+    
+    nav {
+        display: -webkit-flex;
+        display: -ms-flex;
+        display:flex;
+
+        flex-wrap: -webkit-wrap;
+        flex-wrap: -ms-wrap;
+        flex-wrap: wrap;
+
+        justify-content: space-around;
+    }
 }
 
-@media (min-width: 78.2em) {
+@media (min-width: 48.1em) {
     #logo {
         flex: 1 1 1%;
     }
@@ -50,10 +142,22 @@ body {
         flex: 3 3 50%;
         text-align: right;
     }
+    
+    nav a {
+        margin: 0 0 0 2em;
+        padding: 0;
+    }
+    
+    .nav-bar {
+        position: static;
+        top: 0;
+        
+        z-index: 10;
+    }
 }
 
 #logo {
-    font-size: 1.3em;
+    font-size: 1.5em;
     font-weight: bold;
     text-decoration: none;
     color: #eb5c6e;
@@ -62,8 +166,6 @@ body {
 nav a {
     color: #2d2d2d;
     text-decoration: none;
-    margin-left: 2em;
-    padding: 0;
 }
 
 nav a:hover, nav a:active, nav a:focus {
@@ -72,14 +174,376 @@ nav a:hover, nav a:active, nav a:focus {
     transition: color 0.2s;
 }
 
+/* end of nav bar section */
+
 .container {
     display: -webkit-flex;
     display: -ms-flex;
-    display:flex;
+    display: flex;
 
     flex-wrap: -webkit-wrap;
     flex-wrap: -ms-wrap;
     flex-wrap: wrap;
 
     justify-content: space-around;
+    padding: 0 10vw;
+    margin-bottom: 2.5em;
 }
+
+.product-description {
+    flex: 2 2 20em;
+    padding-right: 5em;
+    padding-bottom: 5em;
+}
+
+.product-description h1 {
+    margin-bottom: 2em;
+}
+
+.product-image {
+    flex: 3 3 25em;
+    text-align: right;
+}
+
+figure {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    color: #f5f4f4;
+    font-weight: bold;
+    background-color: #eb5c6e;
+    padding: 0.5em 1em;
+    border-radius: 2em;
+    border: 0;
+}
+
+button:hover, button:active, button:focus {
+    background-color: #8A1422;
+    transition: background-color 0.2s;
+}
+
+.specs-container {
+    flex: 3 3 30em;
+    display: block;
+    
+    padding-bottom: 2em;
+}
+
+.specs-container h2 {
+    flex: 1 1 100%;
+    margin-bottom: 1em;
+}
+
+.specs-grid {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    
+    flex-wrap: -webkit-wrap;
+    flex-wrap: -ms-wrap;
+    flex-wrap: wrap;
+    
+    justify-content: space-around;
+}
+
+.spec {
+    flex: 1 1 33%;
+    margin-bottom: 2em;
+}
+
+.reviews-container {
+    flex: 2 2 20em;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    
+    flex-wrap: -webkit-wrap;
+    flex-wrap: -ms-wrap;
+    flex-wrap: wrap;
+    
+    justify-content: space-around;
+    
+    padding-bottom: 2em;
+}
+
+.reviews-container h2 {
+    flex: 1 1 50%;
+}
+
+.reviews-container a {
+    flex: 1 1 50%;
+    text-align: right;
+    
+    color: #EB5C6E;
+    text-decoration: none;
+}
+
+.reviews-container a:hover, .reviews-container a:active, .reviews-container a:focus {
+    color: #8A1422;
+    transition: color 0.2s;
+}
+
+.review {
+    flex: 1 1 100%;
+    margin: 2em 0em;
+}
+
+.review h3 {
+    margin-bottom: 0.6em;
+}
+
+.review p {
+    color: #c1c1c1;
+}
+
+
+label {
+    flex: 1 1 100%
+}
+
+form {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    
+    flex-wrap: -webkit-wrap;
+    flex-wrap: -ms-wrap;
+    flex-wrap: wrap;
+    
+    justify-content: space-around;
+}
+
+form .half {
+    flex: 1 1 50%;
+    margin: 0.5em 0;
+}
+
+form .full {
+    flex: 1 1 100%;
+    margin: 0.5em 0;
+        
+}
+
+form .button {
+    flex: 1 1 100%;
+    margin: 0.5em 0;
+    text-align: right;
+    display: block;
+}
+
+form .button input {
+    color: #f5f4f4;
+    padding: 0.5em 1em;
+    border-radius: 0.15em;
+    border: 0;
+}
+
+form textarea, form input {
+    padding: 0.25em;
+}
+
+.secondary-button {
+    background-color: #fd9892;
+}
+
+.secondary-button:hover, .secondary-button:active, .secondary-button:focus {
+    background-color: #d95c54;
+    transition: background-color 0.2s;
+}
+
+.primary-button {
+    background-color: #eb5c6e;
+}
+
+.primary-button:hover, .primary-button:active, .primary-button:focus {
+    background-color: #8A1422;
+    transition: background-color 0.2s;
+}
+
+.sort-and-filter {
+    flex: 1 1 50%;
+    padding-top: 2em;
+    display: flex;
+}
+
+.sort-and-filter a, .sort-and-filter p {
+    padding: 0.2em 1em;
+}
+
+.sort-and-filter a {
+    color: #FD9892;
+}
+
+.sort-and-filter a:active, .sort-and-filter a:focus, .sort-and-filter a:hover {
+    color: #EB5C6E;
+    
+}
+
+.grid {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    
+    flex-wrap: -webkit-wrap;
+    flex-wrap: -ms-wrap;
+    flex-wrap: wrap;
+    
+    justify-content: space-around;
+    
+    margin-bottom: 2em;
+}
+
+.grid-container {
+    padding: 2em 9vw;
+    min-width: 20em;
+}
+
+.grid {
+    display: flex;
+}
+
+@media (min-width: 30em) {
+    .grid-item {
+        flex: 1 1 9em;
+        margin-bottom: 1em;
+        margin-left: 1vw;
+        margin-right: 1em;
+        max-width: 9em;
+/*        min-width: 9em;*/
+    }
+}
+
+@media (max-width: 30em) {
+    .grid-item {
+        flex: 1 1 7em;
+        margin-bottom: 1em;
+        margin-left: 1vw;
+        margin-right: 1em;
+        max-width: 7em;
+/*        min-width: 9em;*/
+    }
+}
+
+.grid-item img:hover, .grid-item img:active, .grid-item img:focus{
+    border: solid 1px #FD9892;
+}
+
+.grid-item img {
+    max-width: 100%;
+    border-radius: 0.4em;
+}
+
+.grid-item h3 {
+    font-size: 0.8em;
+    color: #2d2d2d;
+}
+
+.page-number {
+    display: block;
+}
+
+.prev-button, .next-button {
+    font-weight: bold;
+    margin: 0 2em;
+}
+
+.checkout {
+    padding: 0 9vw;
+}
+
+.checkout h1 {
+    flex: 1 1 100%;
+    padding: 0 1vw;
+}
+
+
+@media (min-width: 48.1em) {
+    .checkout .grid {
+        flex: 3 3 60%;
+    }
+
+    .receipt {
+        padding: 0 2.5em;
+        flex: 3 3 40%;
+    }
+}
+
+@media (max-width: 48.1em) {
+    .checkout .grid {
+        flex: 1 1 100%;
+    }
+
+    .receipt {
+        padding: 0 1vw;
+        flex: 1 1 100%;
+        
+        padding-top: 1.5em;
+        border-top: dashed 1px #c1c1c1;
+    }
+}
+
+.receipt {
+    display: block;
+}
+
+.receipt h2 {
+    flex: 1 1 100%;
+    margin-bottom: 1em;
+}
+
+.receipt div {
+    flex: 1 1 100%;
+    margin-bottom: 2em;
+}
+
+.receipt p {
+    padding: 1em 0;
+}
+
+.total {
+    flex: 1 1 100%;
+    
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    
+    flex-wrap: -webkit-wrap;
+    flex-wrap: -ms-wrap;
+    flex-wrap: wrap;
+    
+    justify-content: space-around;
+    
+    padding-top: 1.5em;
+    border-top: dashed 1px #c1c1c1;
+}
+
+@media (max-width: 59.1em) {
+    .total {
+        display: block;
+        
+    }
+    
+    .total div {
+        text-align: left;
+    }
+}
+
+@media (min-width: 59.1em) {
+    .total div {
+        flex: 1 1 50%;
+        text-align: right;
+    }
+
+}
+
+.total h2 {
+    flex: 1 1 50%;
+}
+
