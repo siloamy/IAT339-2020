@@ -429,3 +429,94 @@ form .button input {
     max-width: 12em;
     border-radius: 0.4em;
 }
+
+.footer-demo, .header-demo {
+    padding: 0;
+    flex: 1 1 100%;
+    background-color: rgba(0,0,0,0);
+}
+
+header, footer {
+    width: 100%;
+    height: auto;
+    padding: 4em 0;
+    position: relative;
+}
+
+footer {
+    height: auto;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    
+    flex-wrap: -webkit-wrap;
+    flex-wrap: -ms-wrap;
+    flex-wrap: wrap;
+    
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+/* header banner code inspired by https://ryohin-keikaku.jp/csr/ */
+
+.banner.about-banner {
+    background-image: url(../img/ink/038_green.jpg);
+}
+
+.banner.collection-banner {
+    background-image: url(../img/ink/05_orange.jpg);
+/*    opacity: 0.8;*/
+}
+
+.banner.contact-banner {
+    background-image: url(../img/banner/cartridge-shell-banner.jpg);
+}
+
+.banner {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+header h1, header h2 {
+    padding: 0 10vw;
+    margin: 0;
+}
+
+footer .footer-desc, footer .contact {
+    flex: 1 1 100%;
+    margin-bottom: 1.5em;
+}
+
+.footer-demo footer h2, .footer-demo footer p {
+    color: #f5f4f4;
+}
+
+@media (max-width: 43.1em) {
+    footer {
+        padding: 4em 50vw 4em 10vw;
+    }
+    
+    .banner.contact-banner {
+        background-position: left;
+    }
+    
+}
+@media (min-width: 43.1em) {
+    footer {
+        padding: 4em 10vw 4em 60vw;   
+    }
+    
+    .banner.contact-banner {
+        left: -16em;
+        right: 0em;
+    }
+}
