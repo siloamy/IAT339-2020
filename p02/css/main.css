@@ -191,7 +191,7 @@ nav a:hover, nav a:active, nav a:focus {
 }
 
 .product-description {
-    flex: 2 2 20em;
+    flex: 2 2 40%;
     padding-right: 5em;
     padding-bottom: 5em;
 }
@@ -201,7 +201,7 @@ nav a:hover, nav a:active, nav a:focus {
 }
 
 .product-image {
-    flex: 3 3 25em;
+    flex: 3 3 60%;
     text-align: right;
 }
 
@@ -429,6 +429,7 @@ form textarea, form input {
         max-width: 7em;
 /*        min-width: 9em;*/
     }
+}
 
 .grid-item img:hover, .grid-item img:active, .grid-item img:focus{
     border: solid 1px #FD9892;
@@ -545,49 +546,73 @@ form textarea, form input {
     flex: 1 1 50%;
 }
 
-.button {
-color: #f5f4f4;
-font-weight: bold;
-background-color: #eb5c6e;
-height:150px;
-width: 150px;
-border-radius: 50%;
+.sale-text {
+    flex: 2 2 40%;
+    margin-bottom: 2em;
+    padding-right: 3em;
+}
 
-margin-top: 2em;
-margin-bottom: 2em;
-} button:hover, button:active, button:focus {
+.sale-image {
+    flex: 3 3 60%;
+}
+
+.caroseul h2 {
+    flex: 1 1 100%;
+}
+
+.scrolling-wrapper button {
+    flex: 1 1 12em;
+    color: #f5f4f4;
+    font-weight: bold;
+    background-color: #eb5c6e;
+    
+    min-width: 10em;
+    min-height: 10em;
+    max-height: 10em;
+    max-width: 10em;
+    
+    border-radius: 50%;
+
+    margin-top: 2em;
+    margin-bottom: 2em;
+} 
+    
+button:hover, button:active, button:focus {
 background-color: #8A1422;
 transition: background-color 0.2s;
 }
 
-} button:hover, button:active, button:focus {
+button:hover, button:active, button:focus {
 background-color: #8A1422;
 transition: background-color 0.2s;
 }
+
 .scrolling-wrapper {
-display: -webkit-flex;
-display: -ms-flex;
-display: flex;
+    flex: 1 1 100%;
+    
+    padding-top: 0.5em;
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+    
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
 
-flex-wrap: -webkit-wrap;
-flex-wrap: -ms-wrap;
-flex-wrap: nowrap;
+    flex-wrap: -webkit-wrap;
+    flex-wrap: -ms-wrap;
+    flex-wrap: nowrap;
 
-overflow-x: scroll;
--ms-overflow-style: none;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
 
-background-color: #f5f4f4;
-padding: 2em;
-}
-
-.scroll-wrapper::-webkit-scrollbar {
-display: none;
+    background-color: #f5f4f4;
 }
 
 .card {
-flex: 1 1 12em;
-margin-right: 1em;
+    flex: 1 1 12em;
+    margin-right: 1em;
 }
+
 .card h3 {
 font-size: 0.8em;
 color: #2d2d2d;
@@ -610,32 +635,5 @@ max-width: 12em;
 border-radius: 0.4em;
 }
 
-[class^='grid-col-'] {
-    float: left;
-    padding: 0; 
-}
-
-.grid-col-1of2 {
-    width: 100%;
-}
-
-.grid-row::after {
-    content: "";
-    display: block;
-    clear: both;
-}
 
 
-@media (min-width: 48.75em) {
-
-    .grid-col-1of2 {
-        width: 50%;
-    }
-
-    .grid-col-1of2:last-of-type {
-        padding-left: 1rem;
-    }
-
-}
-
-}
