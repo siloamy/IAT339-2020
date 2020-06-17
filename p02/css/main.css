@@ -626,13 +626,13 @@ form textarea, form input {
 } 
     
 button:hover, button:active, button:focus {
-background-color: #8A1422;
-transition: background-color 0.2s;
+    background-color: #8A1422;
+    transition: background-color 0.2s;
 }
 
 button:hover, button:active, button:focus {
-background-color: #8A1422;
-transition: background-color 0.2s;
+    background-color: #8A1422;
+    transition: background-color 0.2s;
 }
 
 .scrolling-wrapper {
@@ -662,26 +662,28 @@ transition: background-color 0.2s;
 }
 
 .card h3 {
-font-size: 0.8em;
-color: #2d2d2d;
-font-weight: normal;
+    font-size: 0.8em;
+    color: #2d2d2d;
+    font-weight: normal;
 }
 
 .card a {
-color: #eb5c6e;
-text-decoration: none;
+    color: #eb5c6e;
+    text-decoration: none;
 }
 
 .card a:hover, .card a:active, .card a:focus {
-color: rgb(235, 92, 110);
-text-decoration: underline;
-transition: color 0.2s;
+    color: rgb(235, 92, 110);
+    text-decoration: underline;
+    transition: color 0.2s;
 }
 
 .card img {
-max-width: 12em;
-border-radius: 0.4em;
+    max-width: 12em;
+    border-radius: 0.4em;
 }
+
+
 
 
 

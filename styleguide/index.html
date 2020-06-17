@@ -17,7 +17,6 @@
             <a href="wireframe.html">wireframes</a>
             <a href="citations.html">citations</a>
             <a href="sitemap.html">sitemap</a>
-            <a href="screenshots.html">screenshots</a>
         </nav>
         
         <h1>a styleguide</h1>
@@ -702,7 +701,111 @@
                 
                     
                 
+            </div>
+            
+            <div class="container footer-container">
+                <div class="desc-container">
+                    <h3>footers</h3>
+                    <div>
+                        <a class="show" href="#show14" id="show14">show code</a>
+                        <a class="hide" href="#hide14" id="hide14">hide code</a>
+
+                        <code class="code">
+                            footer {<br>
+                                width: 100%;<br>
+                                height: 13em;<br>
+                                padding: 4em 0;<br>
+                            <br>
+                                position: relative;<br>
+                                height: auto;<br>
+                                display: -webkit-flex;<br>
+                                display: -ms-flex;<br>
+                                display: flex;<br>
+                            <br>
+                                flex-wrap: -webkit-wrap;<br>
+                                flex-wrap: -ms-wrap;<br>
+                                flex-wrap: wrap;<br>
+                            <br>
+                                justify-content: space-around;<br>
+                            }<br>
+                            <br>
+                            /* header banner code inspired by https://ryohin-keikaku.jp/csr/ */<br>
+
+                            <br>
+                            .banner.contact-banner {<br>
+                                background-image: url(../../p02/img/banner/cartridge-shell-banner.jpg);<br>
+                            }<br>
+
+                            .banner {<br>
+                                display: block;<br>
+                                position: absolute;<br>
+                                top: 0;<br>
+                                bottom: 0;<br>
+                                left: 0;<br>
+                                right: 0;<br>
+                                z-index: -1;<br>
+                                background-size: cover;<br>
+                                background-position: center center;<br>
+                                background-repeat: no-repeat;<br>
+                                margin: 0;<br>
+                            }<br>
+                            <br>
+                            footer .footer-desc, footer .contact {<br>
+                                flex: 1 1 100%;<br>
+                                margin-bottom: 1.5em;<br>
+                            }<br>
+                            <br>
+                            footer h2, footer p {<br>
+                                color: #f5f4f4;<br>
+                            }<br>
+                            <br>
+                            @media (max-width: 43.1em) {<br>
+                                footer {<br>
+                                    padding: 4em 50vw 4em 10vw;<br>
+                                }<br>
+
+                                .banner.contact-banner {<br>
+                                    background-position: left;<br>
+                                }<br>
+                            <br>
+                            }<br>
+                            @media (min-width: 43.1em) {<br>
+                                footer {<br>
+                                    padding: 4em 10vw 4em 60vw;   <br>
+                                }<br>
+                                <br>
+                                .banner.contact-banner {<br>
+                                    left: -16em;<br>
+                                    right: 0em;<br>
+                                }<br>
+                            }<br>
+                        </code>
+                    </div>
                 </div>
+                
+                <div class="demo-container footer-demo">
+                          <footer>
+                              <div class="footer-desc">
+                                  <h2>get in touch!</h2>
+                                  <p>Spicy jalapeno bacon ipsum dolor amet elit pig turducken esse. Bacon spare ribs non drumstick. Ribeye boudin eiusmod reprehenderit eu.</p>
+                              </div>
+
+                              <div class="contact">
+                                  <h3>phone</h3>
+                                  <p>000 000 0000</p>
+                              </div>
+
+                              <div class="contact">
+                                  <h3>email</h3>
+                                  <p>contact@pensfordays.com</p>
+                              </div>
+
+                              <figure class="banner contact-banner"></figure>
+
+                          </footer>
+
+                </div>
+            </div>
                 
         
         </section> <!-- end of patterns section -->
