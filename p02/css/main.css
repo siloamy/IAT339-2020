@@ -516,7 +516,7 @@ form textarea, form input {
 }
 
 
-@media (min-width: 48.1em) {
+@media (min-width: 50.1em) {
     .checkout .grid {
         flex: 3 3 60%;
     }
@@ -527,7 +527,7 @@ form textarea, form input {
     }
 }
 
-@media (max-width: 48.1em) {
+@media (max-width: 50.1em) {
     .checkout .grid {
         flex: 1 1 100%;
     }
@@ -572,14 +572,18 @@ form textarea, form input {
     
     justify-content: space-around;
     
-    padding-top: 1.5em;
+    padding-top: 0.5em;
     border-top: dashed 1px #c1c1c1;
+}
+
+.total p {
+    flex: 1 1 100%;
+    padding-top: 0.2em;
 }
 
 @media (max-width: 59.1em) {
     .total {
         display: block;
-        
     }
     
     .total div {
