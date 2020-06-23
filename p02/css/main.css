@@ -719,7 +719,7 @@ form select {
     flex: 3 3 60%;
 }
 
-.caroseul h2 {
+.carousel h2 {
     flex: 1 1 100%;
 }
 
@@ -773,26 +773,26 @@ form select {
     border: solid 1px #FD9892;
 }
 
-/*
-.scrolling-wrapper .call-to-action-button {
+.scrolling-wrapper .carousel-button {
+    text-align: center;
+    line-height: 12em;
+    
     flex: 1 1 100%;
     color: #f5f4f4;
     font-weight: bold;
     background-color: #eb5c6e;
     
-    min-width: 10em;
-    min-height: 10em;
-    max-height: 10em;
-    max-width: 10em;
+    min-width: 12em;
+    min-height: 12em;
+    max-height: 12em;
+    max-width: 12em;
     
     border-radius: 50%;
 
-    margin-top: 2em;
     margin-bottom: 2em;
 } 
-*/
     
-.call-to-action-button:hover, .call-to-action-button:active, .call-to-action-button:focus {
+.carousel-button:hover, .carousel-button:active, .carousel-button:focus {
     background-color: #8A1422;
     transition: background-color 0.2s;
 }
