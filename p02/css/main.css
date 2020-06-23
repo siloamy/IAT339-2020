@@ -35,8 +35,9 @@ h1 {
     font-size: 2.8em;
 }
 
-h2 {
+h2, legend {
     font-size: 1.6em;
+    font-weight: bold;
 }
 
 h3 {
@@ -369,7 +370,12 @@ form {
     flex-wrap: -ms-wrap;
     flex-wrap: wrap;
     
-    justify-content: space-around;
+    justify-content: space-around
+}
+
+form legend {
+    flex: 1 1 100%;
+    padding-bottom: 1em;
 }
 
 form .half {
@@ -397,8 +403,12 @@ form .button input {
     border: 0;
 }
 
-form textarea, form input {
+form textarea, form input, form select {
     padding: 0.25em;
+}
+
+form select {
+    flex: 1 1 50%; 
 }
 
 .secondary-button {
@@ -515,10 +525,29 @@ form textarea, form input {
     padding: 0 1vw;
 }
 
+.payment h1 {
+    flex: 1 1 100%;
+    margin-bottom: 1.5em;
+}
+
+.forms form {
+    margin-bottom: 3em;
+}
+
+.forms .button {
+    margin-bottom: 0;
+    margin-top: 4em;
+    text-align: left;
+}
+
 
 @media (min-width: 50.1em) {
-    .checkout .grid {
+    .checkout .grid, .payment .forms {
         flex: 3 3 60%;
+    }
+    
+    .payment .forms {
+        padding-right: 10vw;
     }
 
     .receipt {
@@ -528,7 +557,7 @@ form textarea, form input {
 }
 
 @media (max-width: 50.1em) {
-    .checkout .grid {
+    .checkout .grid, .payment .forms{
         flex: 1 1 100%;
     }
 
@@ -556,7 +585,13 @@ form textarea, form input {
 }
 
 .receipt p {
-    padding: 1em 0;
+    padding: 1.25em 0 0.2em 0;
+}
+
+.receipt a:active, .receipt a:focus, .receipt a:hover {
+    color: rgb(235, 92, 110);
+    text-decoration: underline;
+    transition: color 0.2s;
 }
 
 .total {
