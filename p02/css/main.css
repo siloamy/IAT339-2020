@@ -35,7 +35,7 @@ h1 {
     font-size: 2.8em;
 }
 
-h2, legend {
+h2 {
     font-size: 1.6em;
     font-weight: bold;
 }
@@ -268,7 +268,7 @@ img {
     padding: 0;
 }
 
-button {
+.button {
     color: #f5f4f4;
     font-weight: bold;
     background-color: #eb5c6e;
@@ -277,7 +277,7 @@ button {
     border: 0;
 }
 
-button:hover, button:active, button:focus {
+.button:hover, .button:active, .button:focus {
     background-color: #8A1422;
     transition: background-color 0.2s;
 }
@@ -389,14 +389,14 @@ form .full {
         
 }
 
-form .button {
+form .buttons {
     flex: 1 1 100%;
     margin: 0.5em 0;
     text-align: right;
     display: block;
 }
 
-form .button input {
+form .buttons input {
     color: #f5f4f4;
     padding: 0.5em 1em;
     border-radius: 0.15em;
@@ -520,9 +520,13 @@ form select {
     padding: 0 9vw;
 }
 
-.checkout h1 {
+.checkout h1, .cart h2 {
     flex: 1 1 100%;
     padding: 0 1vw;
+}
+
+.cart h2 {
+    margin-bottom: 2em;
 }
 
 .payment h1 {
@@ -534,15 +538,73 @@ form select {
     margin-bottom: 3em;
 }
 
-.forms .button {
+.forms .buttons {
     margin-bottom: 0;
     margin-top: 4em;
     text-align: left;
 }
 
+.forms .buttons a {
+    padding: 0.5em 1em;
+    color: #f5f4f4;
+}
+
+
+.forms h2 {
+    margin-bottom: 1em;
+}
+
+.forms form h2 {
+    margin-top: 1.5em;
+}
+
+
+.payment-info h3 {
+    margin-top: 1.5em;
+    padding: 1em 0;
+}
+
+.payment-info p {
+    padding: 0;
+}
+
+.card-info {
+    margin-bottom: 4em;
+}
+
+.confirm {
+    text-align: center;
+}
+
+.confirm h1, .confirm .thank, .thank h2, .thank p, .thank .button-container{
+    flex: 1 1 100%;
+}
+
+.confirm .thank {
+    margin: 3em 0em;
+    
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    
+    flex-wrap: -webkit-wrap;
+    flex-wrap: -ms-wrap;
+    flex-wrap: wrap;
+    
+    justify-content: space-around;
+}
+
+.thank p {
+    flex: 1 1 100%;
+}
+
+.thank p {
+    margin-bottom: 2em;
+}
+
 
 @media (min-width: 50.1em) {
-    .checkout .grid, .payment .forms {
+    .checkout .cart, .payment .forms, .payment-info {
         flex: 3 3 60%;
     }
     
@@ -557,7 +619,7 @@ form select {
 }
 
 @media (max-width: 50.1em) {
-    .checkout .grid, .payment .forms{
+    .checkout .cart, .payment .forms, .payment-info{
         flex: 1 1 100%;
     }
 
@@ -653,41 +715,12 @@ form select {
     padding-top: 2em;
 }
 
-
-
 .sale-image {
     flex: 3 3 60%;
 }
 
 .caroseul h2 {
     flex: 1 1 100%;
-}
-
-.scrolling-wrapper button {
-    flex: 1 1 12em;
-    color: #f5f4f4;
-    font-weight: bold;
-    background-color: #eb5c6e;
-    
-    min-width: 10em;
-    min-height: 10em;
-    max-height: 10em;
-    max-width: 10em;
-    
-    border-radius: 50%;
-
-    margin-top: 2em;
-    margin-bottom: 2em;
-} 
-    
-button:hover, button:active, button:focus {
-    background-color: #8A1422;
-    transition: background-color 0.2s;
-}
-
-button:hover, button:active, button:focus {
-    background-color: #8A1422;
-    transition: background-color 0.2s;
 }
 
 .scrolling-wrapper {
@@ -707,8 +740,6 @@ button:hover, button:active, button:focus {
 
     overflow-x: scroll;
     -ms-overflow-style: none;
-
-    background-color: #f5f4f4;
 }
 
 .card {
@@ -738,7 +769,33 @@ button:hover, button:active, button:focus {
     border-radius: 0.4em;
 }
 
+.card img:hover, .card img:active, .card img:focus{
+    border: solid 1px #FD9892;
+}
 
+/*
+.scrolling-wrapper .call-to-action-button {
+    flex: 1 1 100%;
+    color: #f5f4f4;
+    font-weight: bold;
+    background-color: #eb5c6e;
+    
+    min-width: 10em;
+    min-height: 10em;
+    max-height: 10em;
+    max-width: 10em;
+    
+    border-radius: 50%;
+
+    margin-top: 2em;
+    margin-bottom: 2em;
+} 
+*/
+    
+.call-to-action-button:hover, .call-to-action-button:active, .call-to-action-button:focus {
+    background-color: #8A1422;
+    transition: background-color 0.2s;
+}
 
 
 
