@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>P02 Company - Checkout</title>
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+  </head>
+    
+  <body>
+      <div id="nav-bar">
+          <a id="logo" href="index.html">desk</a>
+          <nav>
+              <a href="index.html">home</a>
+              <a href="about.html">about</a>
+              <a href="collection.html">collection</a>
+              <a href="product.html">product</a>
+              <a href="checkout.html">checkout</a>
+          </nav>
+      </div>
+      
+      <div class="container payment">
+          <h1>payment and shipping</h1>
+          
+          <div class="forms">
+              <h2>shipping address</h2>
+              <form>
+                  <label for="fullname">full name</label>
+                  <input type="text" class="full" id="fullname" name="fullname">
+                  
+                  <label for="address1">address line 1</label>
+                  <input type="text" class="full" id="address1" name="address1" placeholder="Street address, P.O. box, company name, c/o">
+                  
+                  <label for="address2">address line 2 (optional)</label>
+                  <input type="text" class="full" id="address2" name="address1" placeholder="Apartment, suite, unit, building, floor, etc.">
+                  
+                  <label for="city">city</label>
+                  <input type="text" class="full" id="city" name="city">
+                  
+                  <label for="stateprovreg">state / province / region</label>
+                  <input type="text" class="full" id="stateprovreg" name="stateprovreg">
+                  
+                  <label for="postal">postal code / zip</label>
+                  <input type="text" class="full" id="postal" name="postal">
+                  
+                  <label for="country">country</label>
+                  <input type="text" class="full" id="country" name="country">
+                  
+                  <label for="phone">telephone number</label>
+                  <input type="text" class="full" id="phone" name="phone">
+              
+              <h2 class="full">payment information</h2>
+              
+                  <label for="cardname">name on card</label>
+                  <input type="text" class="full" id="cardname" name="cardname">
+                  
+                  <label for="cardnumber">card number</label>
+                  <input type="text" class="full" id="cardnumber" name="cardnumber">
+                  
+                  <select id="month" aria-label="month" name="month" size="1">
+                      <option value="01">01</option>
+                      <option value="01">02</option>
+                      <option value="01">03</option>
+                      <option value="01">04</option>
+                      <option value="01">05</option>
+                      <option value="01">06</option>
+                      <option value="01">07</option>
+                      <option value="01">08</option>
+                      <option value="01">09</option>
+                      <option value="01">10</option>
+                      <option value="01">11</option>
+                      <option value="01">12</option>
+                  </select>
+                  <select id="year" name="year" size="1">
+                      <option value="2020">2020</option>
+                      <option value="2021">2021</option>
+                      <option value="2022">2022</option>
+                      <option value="2023">2023</option>
+                      <option value="2024">2024</option>
+                      <option value="2025">2025</option>
+                      <option value="2026">2026</option>
+                      <option value="2027">2027</option>
+                      <option value="2028">2028</option>
+                      <option value="2029">2029</option>
+                      <option value="2030">2030</option>
+                      <option value="2031">2031</option>
+                      <option value="2032">2032</option>
+                      <option value="2033">2033</option>
+                      <option value="2034">2034</option>
+                      <option value="2035">2035</option>
+                      <option value="2036">2036</option>
+                      <option value="2037">2037</option>
+                      <option value="2038">2038</option>
+                      <option value="2039">2039</option>
+                      <option value="2040">2040</option>
+                  </select>
+                  
+                  <div class="buttons">
+                            <input class="secondary-button" type="submit" value="reset">
+                            <a class="primary-button" href="payment-info-confirm.html">submit</a>
+                        </div>
+              </form>
+          </div>
+          
+          <div class="receipt">
+              <h2>receipt</h2>
+              <div>
+                  <p>gel pen (blue), $1.50</p>
+                  <a href="#">edit</a>
+                  <a href="#">delete</a>
+                  
+                  <p>gel pen (black) x2, $3.00</p>
+                  <a href="#">edit</a>
+                  <a href="#">delete</a>
+                  
+                  <p>gel pen (orange) x2, $3.00</p>
+                  <a href="#">edit</a>
+                  <a href="#">delete</a>
+                  
+                  <p>gel pen (green) x2, $3.00</p>
+                  <a href="#">edit</a>
+                  <a href="#">delete</a>
+                  
+                  <p>notebook (black), $2.25</p>
+                  <a href="#">edit</a>
+                  <a href="#">delete</a>
+                  
+                  <p>gel pen (red), $1.50</p>
+                  <a href="#">edit</a>
+                  <a href="#">delete</a>
+                  
+                  <p>notebook (brown), $2.25</p>
+                  <a href="#">edit</a>
+                  <a href="#">delete</a>
+                  
+                  
+              </div>
+
+              <div class="total">
+              <p>total cost</p>
+                  <h2>$16.50</h2>
+                  
+              </div>
+          </div>
+      </div>
+      
+      <footer>
+          
+          <div class="footer-desc">
+              <h2>get in touch!</h2>
+              <p>Give us or call or send an email and we'll get back to you just as soon as we can.</p>
+          </div>
+          
+          <div class="contact">
+              <h3>phone</h3>
+              <p>604 496 6353</p>
+          </div>
+          
+          <div class="contact">
+              <h3>email</h3>
+              <p>info@desk.com</p>
+          </div>
+          
+          <figure class="banner contact-banner"></figure>
+          
+      </footer>
+      
+    </body>
+</html>
