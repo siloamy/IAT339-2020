@@ -654,7 +654,7 @@ form select {
     padding: 1.25em 0 0.2em 0;
 }
 
-.receipt a:active, .receipt a:focus, .receipt a:hover {
+.receipt .cart-button:active, .receipt .cart-button:focus, .receipt .cart-button:hover {
     color: rgb(235, 92, 110);
     text-decoration: underline;
     transition: color 0.2s;
