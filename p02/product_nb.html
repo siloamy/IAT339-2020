@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>P02 Company - Product</title>
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+  </head>
+    
+  <body>
+      <div id="nav-bar">
+          <a id="logo" href="index.html">desk</a>
+          <nav>
+              <a href="index.html">home</a>
+              <a href="about.html">about</a>
+              <a href="collection.html">collection</a>
+              <a href="product.html">product</a>
+              <a href="checkout.html">checkout</a>
+          </nav>
+      </div>
+      
+      <div class="container">
+          <div class="product-description">
+              <h1>brown hardcover notebook</h1>
+              <p>A high quality ring-bound notebook with thicker paper to prevent ink bleeding through pages. The paper is lined to help with writing neatness.</p>
+          </div>
+          
+          <div class="product-image">
+              <figure>
+                <img src="img/note/hardcover/brown.jpg" alt="a dark brown notebook with ringed binding">
+              </figure>
+              
+              <a class="button" href="checkout.html">add to cart</a>
+          </div>
+      </div>
+      
+      <div class="container">
+          <div class="specs-container">
+              <h2>specs</h2>
+              
+              <div class="specs-grid">
+                  <div class="spec">
+                      <h3>measurements</h3>
+                      <p>21 x 29.7cm</p>
+                  </div>
+
+                  <div class="spec">
+                      <h3>colour</h3>
+                      <p>brown</p>
+                  </div>
+
+                  <div class="spec">
+                      <h3>sheets</h3>
+                      <p>50 sheets</p>
+                  </div>
+
+                  <div class="spec">
+                      <h3>product id</h3>
+                      <p>5269642</p>
+                  </div>
+              </div>
+              
+              
+          </div>
+      
+          <div class="reviews-container">
+              <h2>reviews</h2>
+              <a href="#leave-a-review">leave a review +</a>
+              
+              <div class="review">   
+                  <h3>Marco T</h3>
+                  <p>I love these notebooks. So lightweight and smooth!</p>
+              </div>
+              
+              <div class="review">   
+                  <h3>Niko_Kumar</h3>
+                  <p>These guys are a little smaller than 8.5 x 11", so grab these if that's what you like.</p>
+              </div>
+              
+              <div class="review">   
+                  <h3>Megan90</h3>
+                  <p>I'm not really a fan of the rings. They bend quite easily if you have a packed bag, so try to keep things neat.</p>
+              </div>
+          
+              <div class="review-form" id="leave-a-review">
+                  <form method="post" action="#">
+                        <label for="review-name">leave a review</label>
+                        <input class="half" title="name" type="text" id="review-name" placeholder="Name">
+                        <input class="half" title="email" type="email" id="review-email" placeholder="email@mail.com">
+                        <textarea class="full" id="review-comment" name="comment" placeholder="Give us your thoughts!"></textarea>
+                        
+                        <div class="buttons">
+                            <input class="secondary-button" type="reset" value="reset">
+                            <input class="secondary-button" type="button" value="add image">
+                            <input class="primary-button" type="submit" value="submit">
+                        </div>
+                    </form>
+              </div>
+          </div>
+      </div>
+      
+            <footer>
+          
+          <div class="footer-desc">
+              <h2>get in touch!</h2>
+              <p>Give us or call or send an email and we'll get back to you just as soon as we can.</p>
+          </div>
+          
+          <div class="contact">
+              <h3>phone</h3>
+              <p>604 496 6353</p>
+          </div>
+          
+          <div class="contact">
+              <h3>email</h3>
+              <p>info@desk.com</p>
+          </div>
+          
+          <figure class="banner contact-banner"></figure>
+          
+      </footer>
+  </body>
+</html>
