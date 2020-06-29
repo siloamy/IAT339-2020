@@ -709,6 +709,7 @@ form select {
     }
 
     .receipt {
+        margin-top: 2em;
         padding: 0 1vw;
         flex: 1 1 100%;
         
