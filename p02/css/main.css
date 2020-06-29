@@ -243,23 +243,50 @@ nav a:hover, nav a:active, nav a:focus {
     margin-bottom: 2.5em;
 }
 
-.product-description {
-    flex: 2 2 40%;
-    padding-right: 5em;
-    padding-bottom: 5em;
+@media (min-width: 62.5em) {
+    .product-description {
+        flex: 3 3 60%;
+        padding-right: 5em;
+        padding-bottom: 5em;
+    }
+
+    .product-description h1 {
+        margin-bottom: 2em;
+    }
+
+    .product-image {
+        flex: 2 2 40%;
+        text-align: right;
+    }
+
+    .product-image figure {
+        margin-bottom: 0.5em;
+    }
+    
 }
 
-.product-description h1 {
-    margin-bottom: 2em;
-}
+@media (max-width: 62.5em) {
+    .product-description {
+        flex: 1 1 100%;
+        padding-bottom: 5em;
+        padding-top: 2em;
+        
+        order: 2;
+    }
 
-.product-image {
-    flex: 3 3 60%;
-    text-align: right;
-}
+    .product-description h1 {
+        margin-bottom: 2em;
+    }
 
-.product-image figure {
-    margin-bottom: 0.5em;
+    .product-image {
+        flex: 1 1 100%;
+        text-align: right;
+    }
+
+    .product-image figure {
+        margin-bottom: 0.5em;
+    }
+    
 }
 
 figure {
