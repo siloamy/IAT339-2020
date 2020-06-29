@@ -56,13 +56,12 @@ ol {
 
 header, footer {
     width: 100%;
-    height: 13em;
+    height: auto;
     padding: 4em 0;
     position: relative;
 }
 
 footer {
-    height: auto;
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
@@ -81,8 +80,8 @@ footer {
 }
 
 .banner.collection-banner {
-    background-image: url(../img/ink/05_orange.jpg);
-/*    opacity: 0.8;*/
+    background-image: url(../img/banner/white-boxes.jpg);
+    opacity: 0.75;
 }
 
 .banner.contact-banner {
@@ -461,17 +460,71 @@ form select {
 }
 
 .sort-and-filter {
-    flex: 1 1 50%;
-    padding-top: 2em;
+    display: -webkit-flex;
+    display: -ms-flex;
     display: flex;
+    
+    flex-wrap: -webkit-wrap;
+    flex-wrap: -ms-wrap;
+    flex-wrap: wrap;
+    
+    justify-content: space-around
 }
 
-.sort-and-filter a, .sort-and-filter p {
-    padding: 0.2em 1em;
+
+@media (max-width: 48.1em) {
+    
+    #sortby {
+        padding-top: 2em;
+        padding-bottom: 0;
+        flex: 1 1 100%;;
+        text-align: center;
+        margin: 0;
+    }
+    
+    
+    .sort-and-filter a {
+        flex: 4 4 30%;
+        padding: 1em 0;
+    }
+    
+    .sort-and-filter p {
+/*        display: none;*/
+        flex: 1 1 5%;
+        padding: 0 0.5em;
+        text-align: center;
+        line-height: 4em;
+    }
+    
 }
+
+@media (min-width: 48.1em) {
+    .sort-and-filter {
+        padding-top: 2em;
+        flex: 1 1 90%;
+    }
+    
+    #sortby {
+        padding-top: 2em;
+        padding-bottom: 0;
+        flex: 1 1 10%;
+    }
+    
+    
+    .sort-and-filter a {
+        flex: 1 1 10%;
+    }
+    
+    .sort-and-filter p {
+        padding: 0 0.5em;
+    }
+}
+
 
 .sort-and-filter a {
     color: #FD9892;
+    text-align: center;
+
 }
 
 .sort-and-filter a:active, .sort-and-filter a:focus, .sort-and-filter a:hover {
