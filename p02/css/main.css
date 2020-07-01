@@ -107,13 +107,18 @@ header h1, header h2 {
     margin: 0;
 }
 
-footer .footer-desc, footer .contact {
+footer .footer-desc, footer .contact, footer .links {
     flex: 1 1 100%;
     margin-bottom: 1.5em;
 }
 
-footer h2, footer p {
+footer h2, footer p, footer a {
     color: #f5f4f4;
+}
+
+footer a:active, footer a:focus, footer a:hover {
+    color: #eb5c6e;
+    text-decoration: underline;
 }
 
 @media (max-width: 43.1em) {
